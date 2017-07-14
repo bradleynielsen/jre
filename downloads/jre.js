@@ -43,8 +43,8 @@ function downloadLoop(url, startEpisode, endEpisode) {
 // *****************************************************
 // uncomment the parts below to download each section
 // *****************************************************
-downloadLoop(olderEpisodesURL,1,37);
-// downloadLoop(oldEpisodesURL,38,129);
+// downloadLoop(olderEpisodesURL,1,37);
+downloadLoop(oldEpisodesURL,39,129);
 // downloadLoop(newestEpisodesURL,130,987);
 
 
