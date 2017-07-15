@@ -11,6 +11,14 @@ app.use('/', express.static(__dirname+'/public'));
 
 app.get('/', function(req, res){
   res.render('index');
+  console.log('on the page!')
+  var url = "http://traffic.libsyn.com/joeroganexp/jrefight01.mp3";
+  console.log('before wget')
+  wget(url);
+  console.log('after wget');
+
+
+  
 });
 
 app.listen(port, function (err) {
