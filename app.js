@@ -13,7 +13,7 @@ app.use('/', express.static(__dirname+'/public'));
 var url = "http://traffic.libsyn.com/joeroganexp/jrefight01.mp3";
   wget({
         url:  url,
-        dest: '/tmp/',      // destination path or path with filenname, default is ./ 
+        dest: './',      // destination path or path with filenname, default is ./ 
         timeout: 2000       // duration to wait for request fulfillment in milliseconds, default is 2 seconds 
     },
     function (error, response, body) {
