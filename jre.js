@@ -9,8 +9,8 @@ var endEpisode = '' //some user input
 
 
 function downloadLoop(url, startEpisode, endEpisode ) {
-	var dlPage ='http://podcasts.joerogan.net/wp-admin/admin-ajax.php?action=launch_popout_player&episodeNum=';
 	var limit = endEpisode+1;
+	var dlPage ='http://podcasts.joerogan.net/wp-admin/admin-ajax.php?action=launch_popout_player&episodeNum=';
 
 	// loop using the user input as iterations
 	for (var i = startEpisode; i < limit; i++) {
@@ -27,7 +27,7 @@ function downloadLoop(url, startEpisode, endEpisode ) {
 		//body> div class='popoutwrapper' > ul id="popout-tracks" > li id="episode-[number]" > span class="podcast-title" 
 		
 		episodeGuest = ''
-		//body> div class='popoutwrapper' > ul id="popout-tracks" > li id="episode-[number]"> div class="popout-track-details" >
+		//body> div class='popoutwrapper' > ul id="popout-tracks" > li id="episode-[number]" > div class="popout-track-details" >
 		
 
 		wget({
