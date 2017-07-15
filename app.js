@@ -53,7 +53,8 @@ app.post('/', urlencodedParser, function(req, res){
     });
 
   }
-//res.sendFile('./public/confirm.html')
+ // res.sendFile(__dirname + '/index.html');
+res.sendFile(__dirname +'/public/confirm.html')
 
 });
 
